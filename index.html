@@ -5,9 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
-        <title>Bglietto del treno prezzi</title>
+        <title>Biglietto del treno prezzi</title>
     </head>
     <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <form>
+                        <label for="km" class="control-label">Km da percorrere</label>
+                        <input type="number" name="km" class="form-control" id="km">
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <label for="age" class="control-select">Seleziona fascia d'età</label>
+                        <select class="control-select" id="age">
+                            <option selected>Seleziona fascia d'età</option>
+                            <option value="under">- 18</option>
+                            <option value="normal">18/64</option>
+                            <option value="over">+65</option>
+                          </select>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <button id="start" class="btn btn-success">Start</button>
+                </div>
+            </div>
+        </div>
         <script src="./js/script.js" type="text/javascript"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
