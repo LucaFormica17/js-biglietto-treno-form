@@ -17,3 +17,9 @@ calc.addEventListener ('click', function(){
     }
     console.log(final_price);
     })
+
+
+    
+//milestone2
+document.getElementById('km-do').innerText = km;
+document.getElementById('to-pay').innerText = final_price; 
